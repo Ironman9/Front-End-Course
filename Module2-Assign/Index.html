@@ -1,6 +1,89 @@
+<!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Module-2 Assignment</title>
+<style>
+/******************DON'T INCLUDE ANY CSS OR BOOTSTRAP FOR THIS ASSIGNMENT********/
+/*Look at Examples in Lecture 24 to achieve similar results in different ways*/
+* {
+  box-sizing: border-box; /*this ensures that width and height includes padding etc. */ 
+  font-family: "Comic Sans MS", cursive, sans-serif; 
+}
+div {
+	border: 3px solid black;
+  background-color: #85867d; 
+  margin-left: 15px; 
+  margin-bottom: 15px; 
+  padding-top: 35px;
+  padding-bottom: 15px;  
+  padding-left: 15px;
+  padding-right: 15px; 
+  position: relative;
+}
+p {
+  border: 3px solid black;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  top: -18px;
+  right: -2.4px;
+}
+
+h1 {
+	text-align: center; 
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-lg-4 {
+   float: left;
+   width: 32%;
+}
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .col-md-6 {
+   float: left;
+   width: 48%;
+  }
+  .col-md-12 {
+    float: left;
+    width: 98%;
+  }
+}
+
+</style>
+
 </head>
 <body>
+<h1>Our Menu</h1>
+<div class="col-lg-4 col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. 
+<p style="background-color: #c5867d">Chicken</p>
+</div>
+
+<div class="col-lg-4 col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. 
+<p style="background-color: #a1563d">Beef</p>
+</div>
+
+<div class="col-lg-4 col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+<p style="background-color: #e7dba4">Sushi</p>
+</div>
+
 </body>
-</html> 
+</html>
+
